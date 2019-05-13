@@ -4,8 +4,16 @@ import PropTypes from 'prop-types'
 import styles from './styles.css'
 
 export default class ExampleComponent extends Component {
+  static defaultProps = {
+    name: 'wiegh',
+    unit: 'kg',
+    value: 85,
+    min: 20,
+    max: 180,
+    step: 5
+  }
   static propTypes = {
-    name: PropTypes.string,
+    name: PropTypes.string ,
     unit: PropTypes.string,
     min: PropTypes.number,
     max: PropTypes.number,
@@ -13,11 +21,12 @@ export default class ExampleComponent extends Component {
     value: PropTypes.number,
   }
   state = {
-    value: this.props.value || 85,
-    min: this.props.min || 20,
-    max: this.props.max || 120,
-    step: this.props.step || 5,
+    value: this.props.value,
+    min: this.props.min,
+    max: this.props.max,
+    step: this.props.step,
   }
+   
   before = React.createRef()
   current = React.createRef()
   after = React.createRef()
@@ -26,7 +35,7 @@ export default class ExampleComponent extends Component {
     return (
       <div className={styles.wieghtcontainer}>
         <div className={styles.title}>
-          {this.props.unit} <span className={styles.unit}>({this.props.unit})</span>
+          {this.props.name} <span className={styles.unit}>({this.props.unit})</span>
         </div>
         <div className={styles.control}>
           <div className={styles.numbersmall}  ref={this.before} 
