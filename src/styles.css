@@ -1,8 +1,159 @@
 /* add css styles here (optional) */
 
-.test {
-  display: inline-block;
-  margin: 2em auto;
-  border: 2px solid #000;
-  font-size: 2em;
+.wieghtcontainer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 5px;
+  box-shadow: 0px 0px 20px 0 #bbbaba;
+  width: 200px;
+  height: 150px;
+  margin: 30px;
+  padding: 20px;
 }
+.title{
+  
+}
+
+.unit{
+
+}
+
+.control{
+  background: rgb(231, 230, 230);
+  width: 150px;
+  height: 80px;
+  border-radius: 40px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.control::after{
+  content: "";
+  width: 0; 
+	height: 0; 
+	border-left: 10px solid transparent;  /* left arrow slant */
+	border-right: 10px solid transparent; /* right arrow slant */
+	border-bottom: 10px solid #f848af; 
+  position: absolute;
+  left: calc(50% - 8px);
+  bottom: 0%;
+}
+
+.number{
+  font-size: 30px;
+  flex: 3;
+  text-align: center;
+  transition: all ease 500ms;
+}
+
+.numbersmall{
+  font-size: 20px;
+  flex:3;
+  text-align: center;
+  transition: all ease 500ms;
+}
+
+.hideRevers{
+  animation-name: moveRight;
+  animation-duration: .3s;
+}
+
+.hide{
+  animation-name: moveLeft;
+  animation-duration: .3s;
+  
+}
+
+
+.hideCurrentRever{
+  animation-name: moveRightCurrent;
+  animation-duration: .3s;
+}
+
+.hideCurrent{
+  animation-name: moveLeftCurrent;
+  animation-duration: .3s;
+}
+
+
+.hideAfterRevers{
+  animation-name: moveRightAfter;
+  animation-duration: .3s;
+}
+
+.hideAfter{
+  animation-name: moveLeftAfter;
+  animation-duration: .3s;
+}
+
+
+@keyframes moveRightAfter {
+  from {
+
+  }
+  to {
+    transform: translateX(20px);
+    opacity: 0;
+    font-size: 10px;
+  }
+}
+
+@keyframes moveRightCurrent {
+  from {
+
+  }
+  to {
+    transform: translateX(50px);
+    font-size: 20px;
+  }
+}
+
+@keyframes moveRight {
+  from {
+
+  }
+  to {
+    transform: translateX(50px);
+    font-size: 30px;
+  }
+}
+
+@keyframes moveLeftAfter {
+  from {
+
+  }
+  to {
+    transform: translateX(-50px);
+    font-size: 30px;
+  }
+}
+
+
+@keyframes moveLeftCurrent {
+  from {
+
+  }
+  to {
+    transform: translateX(-50px);
+    font-size: 20px;
+  }
+}
+
+@keyframes moveLeft {
+  from {
+
+  }
+  to {
+    transform: translateX(-20px);
+    opacity: 0;
+    font-size: 10px;
+  }
+}
+
+
+
