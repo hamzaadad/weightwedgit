@@ -2,6 +2,9 @@
 
 > a fun project
 
+![alt text](https://github.com/hamzaadad/weightwedgit/blob/master/demo.png?raw=true)
+
+
 [![NPM](https://img.shields.io/npm/v/weightwedgit.svg)](https://www.npmjs.com/package/weightwedgit) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 ## Install
