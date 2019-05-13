@@ -61,7 +61,7 @@ export default class ExampleComponent extends Component {
            }
          }
           >
-            {this.state.value - 5}
+            {this.state.value - this.state.step}
           </div>
           <div className={styles.number} ref={this.current} >
           {this.state.value }
@@ -85,7 +85,7 @@ export default class ExampleComponent extends Component {
              
             }
           }>
-            {this.state.value + 5}
+            {this.state.value + this.state.step}
           </div>
         </div>
       </div>
