@@ -15,17 +15,20 @@ npm install --save weightwedgit
 ```jsx
 import React, { Component } from 'react'
 
-import MyComponent from 'weightwedgit'
+import Weightwedgit from 'weightwedgit'
 
 class Example extends Component {
   render () {
+    const props = {name: 'wight', unit: 'kg', step: 5, value: 80, min: 20, max: 180};
     return (
-      <MyComponent />
+      <Weightwedgit ...props />
     )
   }
 }
 ```
 
+## RoadMap
+get right of setTimeout.... uuukh
 ## License
 
 MIT © [Hamza ADAD](https://github.com/Hamza ADAD)
