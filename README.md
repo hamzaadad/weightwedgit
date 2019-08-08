@@ -31,7 +31,7 @@ class Example extends Component {
 ```
 
 ## RoadMap
-get right of setTimeout.... uuukh
+get rid of setTimeout.... uuukh
 ## License
 
 MIT © [Hamza ADAD](https://github.com/Hamza ADAD)
